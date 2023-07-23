@@ -24,4 +24,4 @@ Make sure you have Node.js installed on your machine.
 **Dependencies**
 The project relies on the following libraries:
 
-```Payform: Used for credit card form handling, input validation, and number formatting.
+`Payform`: Used for credit card form handling, input validation, and number formatting.
