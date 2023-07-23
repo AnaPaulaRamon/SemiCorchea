@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+     <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Semicorchea</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./jquery.payform.min.js" charset="utf-8"></script>
+    <script src="./app.js" async></script>
+</head>
+<body>
+            <!--========== SCROLL TOP ==========-->
+            <a href="#" class="scrolltop" id="scroll-top">
+                <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+            </a>
+            
+            <!--========== HEADER ==========-->
+            <header class="l-header" id="header">
+                <nav class="nav bd-container">
+                    <a href="#" class="nav__logo">SEMICORCHEA</a>
+    
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                            <li class="nav__item"><a href="#categories" class="nav__link">Categories</a></li>
+                            <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+    
+                            <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+    <main>
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="images/icons/instruments.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Music is life itself</h1>
+                        <p class="home__description">
+                            Discover the world of music at SemiCorchea! Browse our extensive
+                            selection of high-quality instruments and accessories, perfect
+                            for musicians of all levels.
+                        </p>
+                        <a href="#products" class="button">SEE OUR PRODUCTS</a>
+                    </div>   
+                </div>
+            </section>
+
+   <!--========== ABOUT ==========-->
+   <section class="about section bd-container" id="about">
+    <div class="about__container bd-grid">
+        <div class="about__data">
+            <h2 class="section-title-center"> We are a small business in the core of <br> Quito, Ecuador</h2>
+            <p class="about__description">At SemiCorchea, we're passionate about music. Our
+            store is a hub for exceptional instruments, backed by our expertise and commitment 
+            to helping musicians find their perfect match.</p>
+            <a href="#products" class="button">SEE OUR PRODUCTS</a>
+        </div>
+
+        <div class="about__img">
+            <img src="https://giftlab.co/wp-content/uploads/2018/09/51PMdYeweL._SL1001_.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!--========== CATEGORIES ==========-->
+<section class="categories section bd-container" id="categories">
+    <h2 class="section-title">Find all categories <br> and styles</h2>
+    <ul class="tabs categories__container bd-grid">
+        <li class="tab categories__data">
+            <a data-switcher data-tab="1" href="#products">
+                <img src="images/icons/cello.png" alt="" class="categories__img">
+                <h3 class="categories__title">String Instruments</h3>
+            </a>
+        </li>
+        <li class="tab categories__data">
+            <a data-switcher data-tab="2" href="#products">
+                <img src="images/icons/electricGuitar.png" alt="" class="categories__img">
+                <h3 class="categories__title">Electric Guitars</h3>
+            </a>
+        </li>
+        <li class="tab categories__data">
+            <a data-switcher data-tab="3" href="#products">
+                <img src="images/icons/piano.png" alt="" class="categories__img">
+                <h3 class="categories__title">Percussion</h3>
+            </a>
+        </li>
+        <li class="tab categories__data">
+            <a data-switcher data-tab="4" href="#products">
+                <img src="images/icons/saxhophone.jpg" alt="" class="categories__img">
+                <h3 class="categories__title">Wind Instruments</h3>
+            </a>
+        </li>
+        <li class="tab is-active categories__data">
+            <a data-switcher data-tab="5" href="#products">
+                <img src="images/icons/various.png" alt="" class="categories__img">
+                <h3 class="categories__title">All Products</h3>
+            </a>
+        </li>
+    </ul>
+</section>
+
+    <!-- Featured Products -->
+    <section class="products section bd-container" id="products">
+        <h2 class="section-title">Featured Products</h2>
+    </section>
+    <main  class="bd-container" >
+    <section class="pages">
+        <div class="page" data-page="1">
+            <div class="products__container_string bd-grid"></div>
+        </div>
+        <div class="page" data-page="2">
+            <div class="products__container_electric bd-grid"></div>
+        </div>
+        <div class="page" data-page="3">
+            <div class="products__container_percussion bd-grid"></div>
+        </div>
+        <div class="page" data-page="4">
+            <div class="products__container_wind bd-grid"></div>
+        </div>
+        <div class="page is-active" data-page="5">
+            <div class="products__container bd-grid"></div>
+        </div>
+    </section>
+</main>
+
+    <!-- CART -->
+    <section id="third" class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0.00</span>
+        </div>
+        <a href="" class="btn btn-primary btn-purchase" id="purchase" type="button">PURCHASE</a>
+    </section>
+
+    <!-- PAYMENT -->
+    <section id="fourth" class="container content-section">
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Confirm Purchase</h1>
+            </div>
+            <div class="payment">
+                <form id="formdata">
+                    <div class="form-group owner">
+                        <label for="owner">Owner</label>
+                        <input type="text" class="form-control" id="owner">
+                    </div>
+                    <div class="form-group CVV">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+                    </div>
+                    <div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber">
+                    </div>
+                    <div class="form-group" id="expiration-date">
+                        <label>Expiration Date</label>
+                        <select class="exData">
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select class="exData">
+                            <option value="16"> 2016</option>
+                            <option value="17"> 2017</option>
+                            <option value="18"> 2018</option>
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="credit_cards">
+                        <img src="images/imagesCreditCard/visa.png" class="card_img" id="visa">
+                        <img src="images/imagesCreditCard/mastercard.png" class="card_img" id="mastercard">
+                        <img src="images/imagesCreditCard/americanExpress.png" class="card_img" id="amex">
+                    </div>
+                    <div class="form-group" id="pay-now">
+                        <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                    </div>
+                </form>
+                <div id="exito" style="display:none">
+                    Sus datos han sido recibidos con éxito.
+                </div>
+                <div id="fracaso" style="display:none">
+                    Se ha producido un error durante el envío de datos.
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Subscribe to our newsletter</a>
+                    </h3>
+                    <p class="footer__description">Stay updated about our<br>most recent sales.</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing </a></li>
+                        <li><a href="#" class="footer__link">Discounts</a></li>
+                        <li><a href="#" class="footer__link">Shipping mode</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </footer>
+    
+
+     <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>
+</html>
